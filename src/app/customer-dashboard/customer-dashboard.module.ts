@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+import { CustomerDashboardRoutingModule } from './customer-dashboard-routing.module';
 import { MatSliderModule } from '@angular/material/slider';
 
 
@@ -10,11 +11,12 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   imports: [
     CommonModule,
+    CustomerDashboardRoutingModule,
     MatSliderModule
+    
   ],
   exports:[
-    CustomerProfileComponent,
-    MatSliderModule
+    CustomerProfileComponent
   ]
 })
 export class CustomerDashboardModule { }

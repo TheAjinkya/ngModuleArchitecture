@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SingUpComponent } from './sing-up/sing-up.component';
-import { CustomerDashboardModule } from '../customer-dashboard/customer-dashboard.module';
+import { LoginRoutingModule } from './login-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    SignInComponent,
-    SingUpComponent
+    SignInComponent
   ],
   imports: [
     CommonModule,
-    CustomerDashboardModule
+    LoginRoutingModule
   ],
   exports:[
     SignInComponent
